@@ -1,0 +1,31 @@
+{
+  "name": "jw-devs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jw-devs/jw-devs.git"
+  },
+  "keywords": [],
+  "author": "Mario Uher <uher.mario@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jw-devs/jw-devs/issues"
+  },
+  "homepage": "https://github.com/jw-devs/jw-devs",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "css-loader": "^0.16.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "postcss": "^4.1.16",
+    "postcss-custom-media": "^4.1.0",
+    "postcss-loader": "^0.5.1",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.11.0"
+  }
+}
