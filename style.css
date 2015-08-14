@@ -35,5 +35,7 @@ body {
 
 
 .Logo {
+  height: 112px;
   margin-bottom: 2rem;
+  width: 112px;
 }
