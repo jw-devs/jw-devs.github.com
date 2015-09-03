@@ -1,0 +1,33 @@
+@custom-media --iphone (max-width: 736px);
+
+
+.Container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Container > * {
+  height: 50vh;
+  width: 50vw;
+
+  text-align: center;
+}
+
+  @media (--iphone) {
+    .Container > * {
+      width: 80vw;
+    }
+  }
+
+
+.Logo {
+  height: 112px;
+  margin-bottom: 2rem;
+  width: 112px;
+}
