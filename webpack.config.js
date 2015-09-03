@@ -16,6 +16,6 @@ module.exports = {
   ],
   postcss: [
     require("autoprefixer-core"),
-    require('postcss-custom-media')
+    require("postcss-custom-media")
   ]
 };
