@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --history-api-fallback"
+    "start": "webpack-dev-server --inline --history-api-fallback",
+    "deploy": "webpack -p; git commit -am \"🚀\"; git push"
   },
   "repository": {
     "type": "git",
