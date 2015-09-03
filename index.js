@@ -9,6 +9,6 @@ import App from "./components/App";
 
 React.render(
   <Router history={createHistory()}>
-    <Route path="/" component={App} />
+    <Route path="*" component={App} />
   </Router>
 , document.body);
