@@ -9,14 +9,14 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") },
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel?stage=0&loose[]=es6.modules&loose[]=es6.classes" }
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel?presets[]=stage-0&presets[]=react&presets[]=es2015" }
     ]
   },
   plugins: [
     new ExtractTextPlugin("bundle.css")
   ],
   postcss: [
-    require("autoprefixer-core"),
+    require("autoprefixer"),
     require("postcss-custom-media")
   ]
 };
