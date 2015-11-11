@@ -1,15 +1,13 @@
-import "./index.css";
-
-
+import styles from "./index.css";
 import React, { Component } from "react";
 
 
 export default class App extends Component {
   render() {
     return (
-      <section className="Container">
+      <section className={styles.Container}>
         <div>
-          <img className="Logo" src="logo.svg" alt="JW.devs Logo" />
+          <img className={styles.Logo} src="logo.svg" alt="JW.devs Logo" />
           <p>
             Wir sind eine Programmierer-Community von Brüdern&nbsp;&amp;&nbsp;Schwestern.
           </p>

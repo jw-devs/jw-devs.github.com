@@ -1,3 +1,5 @@
+/*eslint-env node*/
+
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
@@ -8,7 +10,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]!postcss-loader") },
       { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel?presets[]=stage-0&presets[]=react&presets[]=es2015" }
     ]
   },
