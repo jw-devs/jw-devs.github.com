@@ -12,4 +12,4 @@ ReactDOM.render(
   <Router history={createHistory()}>
     <Route path="*" component={App} />
   </Router>
-, document.body);
+, document.querySelector("main"));
