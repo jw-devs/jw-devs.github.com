@@ -35,7 +35,8 @@
     "postcss-custom-media": "^5.0.0",
     "postcss-loader": "^0.7.0",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.4"
+    "webpack": "^1.12.4",
+    "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
     "history": "^1.13.0",
