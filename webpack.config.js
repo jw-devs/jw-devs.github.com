@@ -1,5 +1,6 @@
 /*eslint-env node*/
 
+var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
@@ -8,7 +9,6 @@ module.exports = {
   output: {
     filename: "bundle.js"
   },
-  devtool: "inline-source-map",
   module: {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]!postcss-loader") },
@@ -16,7 +16,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("bundle.css")
+    new ExtractTextPlugin("bundle.css"),
+    new webpack.DefinePlugin({
+      "process.env": {
+        "NODE_ENV": "\"production\""
+      }
+    })
   ],
   postcss: [
     require("autoprefixer"),
