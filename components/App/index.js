@@ -9,10 +9,10 @@ export default () => (
       <img className={classNames(styles.Logo)} src="logo.svg" alt="JW.devs Logo" />
       <Terminal>
         <p>
-          Wir sind eine Programmierer-Community von Brüdern&nbsp;&amp;&nbsp;Schwestern
+          We are a programmer community of brothers&nbsp;&amp;&nbsp;sisters
         </p>
         <p>
-          We are a programmer community of brothers&nbsp;&amp;&nbsp;sisters
+          Wir sind eine Programmierer-Community von Brüdern&nbsp;&amp;&nbsp;Schwestern
         </p>
       </Terminal>
     </div>
