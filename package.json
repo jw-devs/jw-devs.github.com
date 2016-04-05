@@ -5,8 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --history-api-fallback",
-    "deploy": "webpack -p; cp index.html 404.html; git commit -am \"🚀\"; git push"
+    "deploy": "webpack -p; cp index.html 404.html; git commit -am \"🚀\"; git push",
+    "lint": "eslint --fix --ignore-path .gitignore components/**/*.js index.js",
+    "start": "webpack-dev-server --inline --history-api-fallback"
   },
   "repository": {
     "type": "git",

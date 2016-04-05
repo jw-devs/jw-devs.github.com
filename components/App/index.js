@@ -1,8 +1,6 @@
 import styles from "./index.css";
-
 import React from "react";
 import classNames from "classnames";
-
 
 export default () => (
   <section className={classNames(styles.Container)}>
