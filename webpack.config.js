@@ -10,7 +10,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]!postcss-loader") },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract("style", "css?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]!postcss") },
       { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel?presets[]=es2015&presets[]=stage-0&presets[]=react" }
     ]
   },
