@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
 
-  font-family: "Operator Mono", Monaco, sans-serif;
+  font-family: "Operator Mono", Monaco, monospace;
   font-weight: lighter;
   font-size: 16px;
 }
