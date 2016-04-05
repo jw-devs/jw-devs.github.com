@@ -11,6 +11,9 @@ export default () => (
         <p>
           Wir sind eine Programmierer-Community von Brüdern&nbsp;&amp;&nbsp;Schwestern
         </p>
+        <p>
+          We are a programmer community of brothers&nbsp;&amp;&nbsp;sisters
+        </p>
       </Terminal>
     </div>
   </section>
