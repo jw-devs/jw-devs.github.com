@@ -6,8 +6,10 @@
   "main": "index.js",
   "scripts": {
     "deploy": "webpack -p; cp index.html 404.html; git commit -am \"🚀\"; git push",
-    "lint": "eslint --fix --ignore-path .gitignore components/**/*.js index.js",
-    "start": "webpack-dev-server --inline --history-api-fallback"
+    "eslint": "eslint --fix --ignore-path .gitignore components/**/*.js index.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "start": "webpack-dev-server --inline --history-api-fallback",
+    "stylelint": "stylelint --ignore-path .gitignore components/**/*.css"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,8 @@
     "postcss-custom-media": "^5.0.0",
     "postcss-loader": "^0.8.0",
     "style-loader": "^0.13.0",
+    "stylelint": "^5.2.1",
+    "stylelint-config-standard": "^4.0.1",
     "webpack": "^1.12.7",
     "webpack-dev-server": "1.14.0"
   },

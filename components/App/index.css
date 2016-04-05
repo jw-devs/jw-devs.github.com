@@ -1,6 +1,5 @@
 @custom-media --iphone (max-width: 736px);
 
-
 .Container {
   height: 100vh;
   margin: 0;
@@ -10,10 +9,9 @@
   align-items: center;
   justify-content: center;
 
-  font-family: -apple-system, "Helvetica", sans-serif;
-  font-size: 16px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  font-size: 16px !important;
 }
-
 
 .Container > * {
   height: 50vh;
@@ -22,12 +20,11 @@
   text-align: center;
 }
 
-  @media (--iphone) {
-    .Container > * {
-      width: 80vw;
-    }
+@media (--iphone) {
+  .Container > * {
+    width: 80vw;
   }
-
+}
 
 .Logo {
   height: 112px;
