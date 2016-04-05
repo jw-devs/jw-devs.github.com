@@ -45,6 +45,7 @@
     "webpack-dev-server": "1.14.0"
   },
   "dependencies": {
+    "normalize.css": "^4.0.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "rebound": "0.0.13"
