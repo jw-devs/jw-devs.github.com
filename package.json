@@ -5,8 +5,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "webpack -p; cp index.html 404.html; git commit -am \"🚀\"; git push",
+    "eslint": "eslint --fix --ignore-path .gitignore components/**/*.js index.js",
+    "lint": "npm run eslint && npm run stylelint",
     "start": "webpack-dev-server --inline --history-api-fallback",
-    "deploy": "webpack -p; cp index.html 404.html; git commit -am \"🚀\"; git push"
+    "stylelint": "stylelint --ignore-path .gitignore components/**/*.css"
   },
   "repository": {
     "type": "git",
@@ -22,25 +25,29 @@
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "babel-core": "^6.2.1",
-    "babel-eslint": "^4.1.5",
+    "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-0": "^6.1.18",
     "classnames": "^2.2.0",
     "css-loader": "^0.23.0",
-    "eslint": "^1.10.0",
-    "eslint-plugin-react": "^3.9.0",
-    "extract-text-webpack-plugin": "^0.9.1",
+    "eslint": "^2.7.0",
+    "eslint-plugin-react": "^4.2.3",
+    "extract-text-webpack-plugin": "^1.0.1",
     "postcss": "^5.0.12",
     "postcss-custom-media": "^5.0.0",
     "postcss-loader": "^0.8.0",
     "style-loader": "^0.13.0",
+    "stylelint": "^5.2.1",
+    "stylelint-config-standard": "^4.0.1",
     "webpack": "^1.12.7",
-    "webpack-dev-server": "^1.12.1"
+    "webpack-dev-server": "1.14.0"
   },
   "dependencies": {
+    "normalize.css": "^4.0.0",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "rebound": "0.0.13"
   }
 }
