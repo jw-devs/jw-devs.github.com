@@ -10,7 +10,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") },
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel" }
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel" },
+      { test: /\.html/, loader: "raw!html-minify" }
     ]
   },
   plugins: [
