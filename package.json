@@ -4,7 +4,10 @@
   "description": "A Slack community of brothers and sisters",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix _index.js",
+    "lint": "npm run lint:js; npm run lint:css",
+    "lint:js": "eslint --fix _index.js {containers,components}/**/*.js",
+    "lint:css": "stylelint {containers,components}/**/*.css",
+    "start": "webpack-dev-server --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +39,8 @@
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "style-loader": "^0.13.1",
+    "stylelint": "^6.2.2",
+    "stylelint-config-idiomatic-order": "^1.0.0",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
