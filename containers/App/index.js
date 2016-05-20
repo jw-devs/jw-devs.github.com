@@ -61,10 +61,10 @@ export default class App extends Component {
     };
 
     return (
-      <pre className={styles.app} ref={getWidthAndHeight(::this.setWindowWidthAndHeight)}>
+      <section className={styles.app} ref={getWidthAndHeight(::this.setWindowWidthAndHeight)}>
         {this.state.characterWidth ? null : <span ref={getWidthAndHeight(::this.setCharacterWidthAndHeight)}>m</span>}
         {children.map((child, key) => typeof child === "object" ? cloneElement(child, { key, width }) : child)}
-      </pre>
+      </section>
     );
   }
 }

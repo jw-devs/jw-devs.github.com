@@ -1,11 +1,5 @@
-.text {
-  font-family: "Courier New", monospace;
-  font-size: 15px;
-  color: #f8f8f2;
-}
-
 .app {
-  display: flex;
+  display: block;
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
@@ -13,15 +7,21 @@
   margin: 0;
 
   background-color: rgb(0, 48, 62);
-
-  composes: text;
+  color: #e1f5fe;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 18px;
+  white-space: nowrap;
 }
 
 :global(a) {
-  color: #f8f8f2;
+  border-bottom: 1px solid #ff4081;
+
+  color: #e1f5fe;
+  text-decoration: none;
 }
 
 :global(a:hover) {
-  background-color: #ff3692;
-  color: #f8f8f2;
+  background-color: #ff4081;
+  color: #e1f5fe;
 }
