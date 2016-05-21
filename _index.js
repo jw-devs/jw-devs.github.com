@@ -25,7 +25,7 @@ ReactDOM.render((
       &nbsp;&nbsp;&nbsp;We are a programmer community of brothers & sisters
     </Line>
     <Line>
-      &nbsp;&nbsp;&nbsp;<a href="https://jw-devs.slack.com">talking</a> and <a href="https://github.com/jw-devs" target="_blank">working</a> on projects together.
+      &nbsp;&nbsp;&nbsp;<a href="https://jw-devs.slack.com" target="_blank">talking</a> and <a href="https://github.com/jw-devs" target="_blank">working</a> on projects together.
     </Line>
     <Line>
       &nbsp;&nbsp;&nbsp;You also share the love for Jehovah, brothers and
@@ -34,7 +34,7 @@ ReactDOM.render((
       &nbsp;&nbsp;&nbsp;sisters around the world as well computers
     </Line>
     <Line>
-      &nbsp;&nbsp;&nbsp;and other nerdy stuff? <a href="mailto:uher.mario+jw-devs@gmail.com" target="_blank">Join us!</a>
+      &nbsp;&nbsp;&nbsp;and other nerdy stuff? <a href="mailto:uher.mario+jw-devs@gmail.com">Join us!</a>
     </Line>
     <Line />
     <Line />
