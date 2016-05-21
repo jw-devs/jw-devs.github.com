@@ -4,6 +4,7 @@
   "description": "A Slack community of brothers and sisters",
   "main": "index.js",
   "scripts": {
+    "deploy": "webpack -p; cp index.html 404.html; git commit -am \"🚀\"; git push",
     "lint": "npm run lint:js; npm run lint:css",
     "lint:js": "eslint --fix _index.js {containers,components}/**/*.js",
     "lint:css": "stylelint {containers,components}/**/*.css",
